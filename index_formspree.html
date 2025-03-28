@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retorno Premiado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, button {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #34495e;
+    }
+    .whatsapp {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .whatsapp a {
+      color: #25d366;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Retorno Premiado</h2>
+    <p>Envie suas apólices de automóvel ou residencial e concorra a prêmios!</p>
+    <form action="https://formspree.io/f/manedeng" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="tel" name="whatsapp" placeholder="WhatsApp" required />
+      <input type="file" name="apolice" accept=".pdf,.jpg,.jpeg,.png" required />
+      <button type="submit">Enviar Apólice</button>
+    </form>
+    <div class="whatsapp">
+      <p>Prefere enviar pelo WhatsApp?</p>
+      <a href="https://wa.me/5545996763101?text=Ol%C3%A1%2C%20gostaria%20de%20enviar%20minha%20ap%C3%B3lice%20para%20participar%20da%20campanha%20Retorno%20Premiado." target="_blank">Clique aqui para enviar</a>
+    </div>
+  </div>
+</body>
+</html>
