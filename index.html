@@ -51,6 +51,15 @@
     <h1>Envio de Apólice - Retorno Premiado</h1>
     <p>Obrigado por enviar sua apólice de automóvel ou residencial! A apólice foi anexada com sucesso e seu cadastro está completo.</p>
     <p>Entraremos em contato próximo ao vencimento para oferecer nossas melhores opções de renovação e condições. Fique atento à nossa comunicação!</p>
+    <form action="https://formspree.io/f/manedeng" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="tel" name="whatsapp" value="+5554996763101" readonly />
+      <input type="file" name="apolice" accept=".pdf,.jpg,.jpeg,.png" required />
+      <input type="hidden" name="_subject" value="Nova Apólice Recebida - Retorno Premiado">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <button type="submit">Enviar Apólice</button>
+    </form>
     <button class="button" onclick="window.location.href='https://retornoseguros.com.br'">Voltar ao site</button>
   </div>
 </body>
